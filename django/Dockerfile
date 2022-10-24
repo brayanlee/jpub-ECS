@@ -9,6 +9,7 @@ RUN ln -s /usr/bin/python3.8 /usr/bin/python
 
 RUN pip install -U setuptools
 RUN pip install django==3.2 asgiref==3.3.3 gunicorn==20.0.4 setproctitle==1.1.10
+RUN pip install django-common-models phonenumbers 
 
 COPY ./app /app
 RUN chown -R root:root /app
